@@ -77,13 +77,72 @@ Syntaxonomicon emerged from a need for a consistent, cross-language variable nam
 append to `verb_to_describe_what_a_function_does`, depending on its intent:
 
 `_get` → get some value or function and return
+
 `_conv` → process into something and return
+
 `_bool` → to check whether something is true or not by passing into a function
+
 `_set` → set a new variable somewhere
+
 `_print` → print out to Console / HTML / CSS / GUI-layer
+
 `_iife` → to more easily trace IIFEs
 
 ## Examples
+
+``````JS
+/**
+ * Cuts a string with a max limit of characters at the character type asked
+ * (a space, a full stop, etc.)
+ *
+ * @param {string} str_Text
+ * @param {number} int_CharsMax
+ * @param {string} str_Character
+ * @returns
+ */
+export function cut_string_at_char_within_limit_conv ( str_Text, int_CharsMax, str_Character ) {
+
+  // Only if the text passed in is over the max char limit
+  if ( str_Text.length > int_CharsMax ) {
+
+    // 1.  Cut the string to max length
+    str_Text = str_Text.substring( 0, int_CharsMax );
+
+    /**
+     * 2. In all cases:
+     *
+     * - search for the position of last occurrence of the character
+     *   passed-in as param
+     *
+     * - cut at that position
+     */
+
+    // After the cut, can we find the character passed to cut at?
+    if ( str_Text.lastIndexOf( str_Character ) > 1 ) {
+      str_Text = str_Text.substring( 0, str_Text.lastIndexOf( str_Character ) );
+    }
+
+    // No? Let's try and find a semi-column and cut there?
+    else if ( str_Text.lastIndexOf( ';' ) > 1 ) {
+      str_Text = str_Text.substring( 0, str_Text.lastIndexOf( ';' ) );
+    }
+
+    // No? Let's try and find a comma and cut there?
+    else if ( str_Text.lastIndexOf( ',' ) > 1 ) {
+      str_Text = str_Text.substring( 0, str_Text.lastIndexOf( ',' ) );
+    }
+
+    // No punctuation to do a graceful cut... cut at white space.
+    else {
+      str_Text = str_Text.substring( 0, str_Text.lastIndexOf( ' ' ) );
+    }
+
+  }
+
+  return str_Text;
+
+}
+``````
 
 
 ## Contributing
