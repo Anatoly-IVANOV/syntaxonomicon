@@ -1,8 +1,10 @@
 # Syntaxonomicon: The Art of Naming in Code
 
-Welcome to the Syntaxonomicon, a variable naming convention / guide assembled since 2000 with a focus on code readability in various languages for programming geniuses like you and me who can’t remember how clever they were a month after project went live. Clear, expressive, and intuitive coding practices independent of strong or dynamic typing.
+Clear, expressive, and intuitive coding practices independent of strong or dynamic typing.
 
-"Syntaxonomicon" = 'syntax' +  'onomicon' (a compendium of names)
+Syntaxonomicon, a variable naming convention / guide assembled since 2000 at [Sylipsi](https://sylipsi.com), [Ektaron](https://ektaron.com) and [Idelekka](https://Idelekka.com), with a focus on code readability in various languages for programming geniuses like you and me who can’t remember how clever they were a month after project the went live.
+
+> [!NOTE] Syntaxonomicon = syntax +  onomicon (a compendium of names)
 
 ## Purpose
 
@@ -13,7 +15,7 @@ Syntaxonomicon emerged from a need for a consistent, cross-language variable nam
 ## Key Features
 
 - **Type Indication Prefixes**: Each variable type begins with a specific prefix (e.g., `int_`, `str_`, `bool_`) for immediate type recognition.
-- **Function Result Suffixes**: Each function has a standardised suffix to immediately give a sense of its result (a return of a conversion, a print to the UI…)
+- **Function Result Suffixes**: Each function has a standardized suffix to immediately give a sense of its result (a return of a conversion, a print to the UI…)
 - **Macro to Micro Scope**: Planet > continent > country > city > street
 - **Nouns for variables**
 - **Verbs for functions**
@@ -52,9 +54,9 @@ Syntaxonomicon emerged from a need for a consistent, cross-language variable nam
 
 - `obj_err_ObjectName` → JavaScript error objects (from try/catch, for example)
 
-- `mod_loc_ObjectName` →	JavaScript modules’ `import as` objects local to the application, not from public NPMs
+- `mod_loc_ObjectName` →	JavaScript modules’ `import as` objects local to the application (not from public NPMs)
 
-- `mod_com_ObjectName` → JavaScript modules’ `import as` objects from modules common to several application or from public NPMs
+- `mod_com_ObjectName` → JavaScript modules’ `import as` objects from modules common to several applications (still not from public NPMs)
 
 ### Variables – C++, PHP
 
@@ -91,6 +93,10 @@ append to `verb_to_describe_what_a_function_does`, depending on its intent:
 ## Examples
 
 ``````JS
+// Print additional vars to console
+export const CONSOLE_DEBUG = false;
+
+
 /**
  * Cuts a string with a max limit of characters at the character type asked
  * (a space, a full stop, etc.)
