@@ -1,4 +1,4 @@
-# Syntaxonomicon: The Art of Naming in Code
+# Syntaxonomicon – Easy-to-Understand Variable Names
 
 Clear, expressive, and intuitive coding practices independent of strong or dynamic typing, for any language.
 
