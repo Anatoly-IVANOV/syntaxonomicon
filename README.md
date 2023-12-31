@@ -91,7 +91,7 @@ append to `verb_to_describe_what_a_function_does`, depending on its intent:
 
 ``````JS
 // Print additional vars to console
-export const CONSOLE_DEBUG = false;
+const CONSOLE_DEBUG = false;
 
 
 /**
@@ -103,7 +103,7 @@ export const CONSOLE_DEBUG = false;
  * @param {string} str_Character
  * @returns
  */
-export function cut_string_at_char_within_limit_conv ( str_Text, int_CharsMax, str_Character ) {
+function cut_string_at_char_within_limit_conv ( str_Text, int_CharsMax, str_Character ) {
 
   // Only if the text passed in is over the max char limit
   if ( str_Text.length > int_CharsMax ) {
