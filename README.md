@@ -1,18 +1,15 @@
 # Syntaxonomicon: The Art of Naming in Code
 
-Clear, expressive, and intuitive coding practices independent of strong or dynamic typing.
+Clear, expressive, and intuitive coding practices independent of strong or dynamic typing, for any language.
 
 Syntaxonomicon, a variable naming convention / guide assembled since 2000 at [Sylipsi](https://sylipsi.com), [Ektaron](https://ektaron.com) and [Idelekka](https://Idelekka.com), with a focus on code readability in various languages for programming geniuses like you and me who can’t remember how clever they were a month after project the went live.
 
-> [!NOTE] Syntaxonomicon = syntax +  onomicon (a compendium of names)
+> [!NOTE]
+> Syntaxonomicon = syntax +  onomicon (a compendium of names)
 
-## Purpose
+Syntaxonomicon emerged from a need for a consistent, cross-language variable naming convention. Probably because of our background in the creative industries (writing, design, cinema), this standard foregoes traditionally terse but obscure naming practices by introducing longer but more explicit methods.
 
-Syntaxonomicon emerged from a need for a consistent, cross-language variable naming convention. It aims to transcend traditionally terse but obscure naming practices by introducing a longer method built on several principles:
-
-- type indication
-
-## Key Features
+## Key Principles
 
 - **Type Indication Prefixes**: Each variable type begins with a specific prefix (e.g., `int_`, `str_`, `bool_`) for immediate type recognition.
 - **Function Result Suffixes**: Each function has a standardized suffix to immediately give a sense of its result (a return of a conversion, a print to the UI…)
